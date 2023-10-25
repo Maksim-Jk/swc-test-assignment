@@ -1,0 +1,24 @@
+
+* {
+    --main-bg-color: #f5f9ff;
+    --secondary-bg-color: #506ccf;
+
+    --main-text-color: #08123A;
+    --secondary-text-color: #5F6B77;
+    --third-text-color: #8B9FCC;
+    --fourth-text-color: #E9EAF0;
+
+    --accent-color-1: #5dcab2;
+    --accent-color-2: #506ccf;
+    --accent-color-3: #ffc86f;
+    --accent-color-4: #ff8b8b;
+    --accent-color-5: #49a1f1;
+
+    --shadow-medium: 0 4px 4px rgba(0, 0, 0, .25);
+    --shadow-large: 0 8px 8px rgba(0, 0, 0, .25);
+    --shadow-xlarge: 0 12px 12px rgba(0, 0, 0, .25);
+    --shadow-xxlarge: 0 16px 16px rgba(0, 0, 0, .25);
+    --shadow-xxxlarge: 0 20px 20px rgba(0, 0, 0, .25);
+
+    --border-radius: 8px;
+}

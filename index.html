@@ -6,50 +6,68 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-<header class="header">
-    <div class="logo"><img src="assets/icons/logo.svg" alt="logo"></div>
-    <ul class="navbar">
-        <li class="navbar__item"><a href="#">Преимущества</a></li>
-        <li class="navbar__item"><a href="#">Услуги</a></li>
-        <li class="navbar__item"><a href="#">Виджет</a></li>
-        <li class="navbar__item"><a href="#">Кому</a></li>
-        <li class="navbar__item"><a href="#">Тарифы</a></li>
-        <li class="navbar__item"><a href="#">Блок</a></li>
-    </ul>
-    <div class="header__controls">
-        <div class="contacts">
-            <span class="contacts__phone">+7 (495) 123-45-67</span>
-            <button class="button button__color-light-blue">Контакты</button>
-        </div>
-    </div>
-</header>
-<main class="main">
-    <section class="assistance">
-        <div class="main__left-part">
+<div class="container">
+    <main class="main-section">
+        <header class="main__header">
+            <div class="logo"><img src="assets/icons/logo.svg" alt="logo"></div>
+            <ul class="navbar">
+                <li class="navbar__item"><a class="navbar__link" href="#">Преимущества</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Услуги</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Виджет</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Кому</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Тарифы</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Блок</a></li>
+            </ul>
+        </header>
+        <section class="main__content">
             <div class="main__join">
                 <h1 class="title">Техническая поддержка сайтов, CRM систем и мобильных приложений</h1>
                 <p class="description">
                     Профессиональное техническое сопровождение и обслуживание сайтов: полный комплекс услуг
                     от опытных экспертов
                 </p>
-                <button class="button button__color-blue">Подключиться</button>
-                <button class="button button__color-transparent">
+                <button class="button button__color-accent-2 connect-button">Подключиться</button>
+                <button class="button button__color-transparent next-button">
                     <img src="assets/icons/arrow-down-short.svg" alt="next">
                 </button>
-                <div class="decoration-user">
-                    <div class="user-status">
-                        <div class="user-status__circle user-status__circle--color-orange"></div>
-                        <div class="user-status__photo">
-                            <img src="./assets/photos/user2.jpg" alt="user">
+                <!--                <div class="decoration-user">-->
+                <!--                    <div class="user-status">-->
+                <!--                        <div class="user-status__circle user-status__circle&#45;&#45;color-orange"></div>-->
+                <!--                        <div class="user-status__photo">-->
+                <!--&lt;!&ndash;                            <img src="./assets/photos/user2.jpg" alt="user">&ndash;&gt;-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="number">
+                                <img class="number__image" src="./assets/photos/user2.jpg" alt="user">
+                            </div>
                         </div>
                     </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="66px" height="66px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63"/>
+                                <stop offset="100%" stop-color="#673ab7"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="33" cy="33" r="31" stroke-linecap="round"/>
+                    </svg>
                 </div>
+
             </div>
             <div class="main__cards-preview">
                 <div class="card">
-                    <div class="card__decoration-circle card__decoration-circle--position-top card__decoration--color-blue"></div>
+                    <div class="card__decoration-circle card__decoration-circle--position-top card__decoration--color-accent-2"></div>
                     <div class="card__decoration-legend">
                         <div class="legend">
                             <div class="legend__color legend__color--orange"></div>
@@ -60,16 +78,16 @@
                         <h3 class="card__title">Аналитика</h3>
                     </div>
                     <div class="card__body">
-                        <div class="circle-diagram circle-diagram--color-blue circle-diagram--radius-130"></div>
-                        <div class="circle-diagram circle-diagram--color-green  circle-diagram--radius-110"></div>
+                        <div class="circle-diagram circle-diagram--color-accent-2 circle-diagram--radius-130"></div>
+                        <div class="circle-diagram circle-diagram--color-accent-1  circle-diagram--radius-110"></div>
                     </div>
                     <div class="card__footer">
                         <div class="legend">
-                            <div class="legend__color  legend__color--blue"></div>
+                            <div class="legend__color  legend__color--accent-2"></div>
                             <div class="legend__description"></div>
                         </div>
                         <div class="legend">
-                            <div class="legend__color  legend__color--green"></div>
+                            <div class="legend__color  legend__color--accent-1"></div>
                             <div class="legend__description"></div>
                         </div>
                     </div>
@@ -81,21 +99,21 @@
                     <div class="card__body">
                         <ul class="card__list">
                             <li class="card__list-item">
-                                <div class="card__list-image card__list-image--background-green"></div>
+                                <div class="card__list-image card__list-image--background-accent-1"></div>
                                 <div class="card__list-body">
                                     <h4 class="card__list-title"></h4>
                                     <p class="card__list-description"></p>
                                 </div>
                             </li>
                             <li class="card__list-item">
-                                <div class="card__list-image card__list-image--background-blue"></div>
+                                <div class="card__list-image card__list-image--background-accent-2"></div>
                                 <div class="card__list-body">
                                     <h4 class="card__list-title"></h4>
                                     <p class="card__list-description"></p>
                                 </div>
                             </li>
                             <li class="card__list-item">
-                                <div class="card__list-image card__list-image--background-yellow"></div>
+                                <div class="card__list-image card__list-image--background-accent-3"></div>
                                 <div class="card__list-body">
                                     <h4 class="card__list-title"></h4>
                                     <p class="card__list-description"></p>
@@ -105,15 +123,32 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+    </main>
 
-        <div class="main__right-part">
+    <!--    - -->
+
+
+    <!--    - -->
+
+
+    <!--    - -->
+
+    <aside class="aside-section">
+        <header class="aside__header">
+            <button class="button button--style-text">EN</button>
+            <div class="contacts">
+                <span class="contacts__phone">+7 (495) 123-45-67</span>
+                <button class="button button__color-accent-5">Контакты</button>
+            </div>
+        </header>
+        <main>
             <div class="card">
-                <div class="card__decoration-circle card__decoration-circle--position-top card__decoration--color-blue"></div>
+                <div class="card__decoration-circle card__decoration-circle--position-top card__decoration--color-accent-2"></div>
                 <div class="card__header">
                     <h3 class="card__title">Список задач</h3>
                     <div class="user-status">
-                        <div class="user-status__circle user-status__circle--color-blue"></div>
+                        <div class="user-status__circle user-status__circle--color-accent-2"></div>
                         <div class="user-status__photo">
                             <img src="./assets/photos/user2.jpg" alt="user">
                         </div>
@@ -143,8 +178,8 @@
                         </td>
                         <td class="table__column">
                             <div class="legend legend--align-right">
-                                <div class="legend__color legend__color--pink"></div>
-                                <div class="legend__description legend__description--color-pink"></div>
+                                <div class="legend__color legend__color--accent-4"></div>
+                                <div class="legend__description legend__description--color-accent-4"></div>
                             </div>
                         </td>
                     </tr>
@@ -159,8 +194,8 @@
                         </td>
                         <td class="table__column">
                             <div class="legend legend--align-right">
-                                <div class="legend__color legend__color--blue"></div>
-                                <div class="legend__description legend__description--color-blue"></div>
+                                <div class="legend__color legend__color--accent-2"></div>
+                                <div class="legend__description legend__description--color-accent-2"></div>
                             </div>
                         </td>
                     </tr>
@@ -175,8 +210,8 @@
                         </td>
                         <td class="table__column">
                             <div class="legend">
-                                <div class="legend__color legend__color--yellow"></div>
-                                <div class="legend__description legend__description--color-yellow"></div>
+                                <div class="legend__color legend__color--accent-3"></div>
+                                <div class="legend__description legend__description--color-accent-3"></div>
                             </div>
                         </td>
                     </tr>
@@ -191,8 +226,8 @@
                         </td>
                         <td class="table__column">
                             <div class="legend">
-                                <div class="legend__color legend__color--yellow"></div>
-                                <div class="legend__description legend__description--color-yellow"></div>
+                                <div class="legend__color legend__color--accent-3"></div>
+                                <div class="legend__description legend__description--color-accent-3"></div>
                             </div>
                         </td>
                     </tr>
@@ -207,8 +242,8 @@
                         </td>
                         <td class="table__column">
                             <div class="legend">
-                                <div class="legend__color legend__color--yellow"></div>
-                                <div class="legend__description legend__description--color-yellow"></div>
+                                <div class="legend__color legend__color--accent-3"></div>
+                                <div class="legend__description legend__description--color-accent-3"></div>
                             </div>
                         </td>
                     </tr>
@@ -223,16 +258,16 @@
                         </td>
                         <td class="table__column">
                             <div class="legend">
-                                <div class="legend__color legend__color--yellow"></div>
-                                <div class="legend__description legend__description--color-yellow"></div>
+                                <div class="legend__color legend__color--accent-3"></div>
+                                <div class="legend__description legend__description--color-accent-3"></div>
                             </div>
                         </td>
                     </tr>
                     </tbody>
                 </table>
             </div>
-        </div>
-    </section>
-</main>
+        </main>
+    </aside>
+</div>
 </body>
 </html>
