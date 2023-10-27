@@ -1,5 +1,6 @@
 
 * {
+    --card-bg-color: #ffffff;
     --main-bg-color: #f5f9ff;
     --secondary-bg-color: linear-gradient(45deg, #506CCF 0%, #3453C2 100%);;
     --third-bg-color: #f3f5f8;
