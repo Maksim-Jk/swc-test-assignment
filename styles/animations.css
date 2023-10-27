@@ -1,0 +1,49 @@
+@keyframes init-circle-rotate {
+    0% {
+        stroke-dasharray: 90;
+        stroke-dashoffset: 140;
+    }
+    100% {
+        stroke-dasharray: 194;
+        stroke-dashoffset: 97;
+    }
+}
+
+@keyframes rotation-clockwise {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation-counter-clockwise {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

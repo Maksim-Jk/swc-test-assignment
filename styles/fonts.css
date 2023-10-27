@@ -9,22 +9,22 @@
     font-family: 'SFPro-text';
     font-style: normal;
     font-weight: 500;
-    src: url('../assets/fonts/SFProText-Bold.woff2') format('woff2');
+    src: url('../assets/fonts/SFProText-Semibold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'SFPro-text';
     font-style: normal;
     font-weight: 600;
-    src: url('../assets/fonts/SFProText-Heavy.woff2') format('woff2');
+    src: url('../assets/fonts/SFProText-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'SFPro-display';
+    font-style: normal;
+    font-weight: 1000;
+    src: url('../assets/fonts/SF-Pro-Display-Bold.otf') format('woff2');
 }
 
-@font-face {
-    font-family: 'SFPro-text';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../assets/fonts/SFProText-Regular.woff2') format('woff2');
-}
 
 * {
     font-family: 'SFPro-text', sans-serif;
